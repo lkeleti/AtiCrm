@@ -60,6 +60,14 @@ A mellékelt `Dockerfile` segítségével az alkalmazásból Docker image kész�
 
 ---
 
+## Swagger felület és Open API link
+
+[Swagger UI](http://localhost:8080/swagger-ui.html)
+
+[Open API](http://localhost:8080/v3/api-docs)
+
+---
+
 ## MariaDb indítása Dockerben (fejlesztéshez)
 `docker run -d -e MYSQL_DATABASE=aticrm -e MYSQL_USER=aticrm -e MYSQL_PASSWORD=aticrm -e MYSQL_ALLOW_EMPTY_PASSWORD=yes -p 3306:3306 --name aticrm-mariadb mariadb`
 

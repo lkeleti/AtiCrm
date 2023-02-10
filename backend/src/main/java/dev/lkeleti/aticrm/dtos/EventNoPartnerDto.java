@@ -1,8 +1,10 @@
 package dev.lkeleti.aticrm.dtos;
 
 import io.swagger.v3.oas.annotations.media.Schema;
-import jakarta.validation.constraints.NotNull;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.time.LocalDateTime;
 
@@ -10,12 +12,12 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @Getter
 @Setter
-public class ModifyEventCommand {
+public class EventNoPartnerDto {
 
-    @NotNull(message = "Event date cannot be null")
-    @Schema(description="Date of the event", example = "2023.02.01")
+    @Schema(description="Event Id", example = "1")
+    public Long id;
+    @Schema(description="Event date", example = "2023.02.01")
     public LocalDateTime eventDate;
-
     @Schema(description="Event comment", example = "We discussed a personal meeting")
     public String comment;
 }
