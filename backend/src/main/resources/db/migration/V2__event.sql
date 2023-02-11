@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS `events` (
+CREATE TABLE `events` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `comment` varchar(255) DEFAULT NULL,
   `event_date` datetime(6) DEFAULT NULL,
@@ -6,4 +6,4 @@ CREATE TABLE IF NOT EXISTS `events` (
   PRIMARY KEY (`id`),
   KEY `FKpartnerid` (`partner_id`),
   CONSTRAINT `FKpartnerid` FOREIGN KEY (`partner_id`) REFERENCES `partners` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+)

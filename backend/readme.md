@@ -1,4 +1,4 @@
-#Minimal CRM system
+## Minimal CRM system
 
 ## Leírás
 Ez a CRM rendszer a partnerekkel történő kapcsolattartáshoz készül.
@@ -54,6 +54,7 @@ réteggel, entitásonként a rétegeknek megfelelően elnevezett osztályokkal. 
 Java programnyelven, Spring Boot használatával történt. Az alkalmazás HTTP kéréseket
 képes fogadni, ezt a RESTful webszolgáltatások segítségével valósítja meg.
 Adattárolásra SQL alapú MariaDB adatbázist használ, melyben a táblákat Flyway hozza létre.
+Az alkalmazás tesztelésére WebClient-tel implementált integrációs tesztek állnak rendelkezésre, a tesztek futtatásakor H2 adatbázis kerül felhasználásra, így az éles adatbázisban tárolt adatok biztonságban vannak a tesztek futtatása alatt is. 
 Az adatbáziskezelés Spring Data JPA technológiával történik. A beérkező adatok validálását a
 Spring Boot `spring-boot-starter-validation` modulja végzi,
 A mellékelt `Dockerfile` segítségével az alkalmazásból Docker image készíthető.
