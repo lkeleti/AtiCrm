@@ -3,4 +3,5 @@ export interface partner {
     name: string;
     phone: string;
     city: string;
+    events: Event[];
 }
