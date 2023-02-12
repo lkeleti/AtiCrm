@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/event")
+@CrossOrigin(origins = "http://localhost:4200", maxAge = 3600)
 @AllArgsConstructor
 @Tag(name = "Operations on events")
 public class EventController {
