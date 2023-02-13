@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { partner } from '../model/partner.model';
+import { Partner } from '../model/partner.model';
 import { PartnerService } from '../services/partner.service';
 
 @Component({
@@ -8,7 +8,7 @@ import { PartnerService } from '../services/partner.service';
   styleUrls: ['./partnerlist.component.scss']
 })
 export class PartnerlistComponent implements OnInit {
-  items: partner[] = [];
+  items: Partner[] = [];
 
   constructor(private ps: PartnerService) {
 

@@ -1,4 +1,4 @@
-export interface partner {
+export interface Partner {
     id: number;
     name: string;
     phone: string;
