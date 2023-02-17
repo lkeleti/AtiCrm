@@ -8,6 +8,6 @@ RUN npm install -g @angular/cli@15
 COPY . /app
 RUN ng build --configuration production
 FROM nginx:1.23-alpine
-COPY --from=BUILD /app/dist/aticrm_angular /user/share/nginx/html
+COPY --from=BUILD /app/dist/aticrm_angular /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 EXPOSE 4200
